@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biblioteca que transforma familias</title>
+  <meta name="description" content="Descubre libros para fortalecer familia, liderazgo, juventud, identidad y salud. Lee un capítulo completo de regalo y compra el libro completo por WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav" aria-label="Principal">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span class="brand-mark">LF</span>
+        <span>Libro de Familia</span>
+      </a>
+      <a class="nav-cta" href="#libros">Ver libros</a>
+    </nav>
+
+    <section class="hero-grid" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Un capítulo completo gratis por cada título</p>
+        <h1>Lecturas que despiertan decisiones familiares.</h1>
+        <p class="hero-text">Elige el libro que más conecta contigo, lee un capítulo completo de regalo y compra el ejemplar completo directamente por WhatsApp.</p>
+        <div class="promo-panel" aria-live="polite">
+          <span class="promo-badge">50% de descuento</span>
+          <div>
+            <strong>Promoción activa por <span class="countdown" data-countdown>10:00</span></strong>
+            <span>Precio regular S/ 100. Durante el contador: S/ 50.</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a class="primary-link" href="#libros">Elegir mi libro</a>
+          <a class="secondary-link" href="https://wa.me/51961951302?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20libros" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-stack" aria-hidden="true">
+        <img class="stack-cover stack-one" src="img/FAMILIAS QUE PERDURAN .png" alt="">
+        <img class="stack-cover stack-two" src="img/JUVENTUD DEL SIGLO XXI.png" alt="">
+        <img class="stack-cover stack-three" src="img/Mas que líderes, Siervos.png" alt="">
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="trust-band" aria-label="Beneficios">
+      <div>
+        <strong>1 capítulo completo gratis</strong>
+        <span>Lee una sección real antes de comprar.</span>
+      </div>
+      <div>
+        <strong>Precio regular S/ 100</strong>
+        <span>Promoción de ingreso: S/ 50 por 10 minutos.</span>
+      </div>
+      <div>
+        <strong>Compra directa</strong>
+        <span>Pedido inmediato por WhatsApp y pago por Yape.</span>
+      </div>
+    </section>
+
+    <section class="books-section" id="libros">
+      <div class="section-heading">
+        <p class="eyebrow">Colección disponible</p>
+        <h2>Escoge el capítulo completo que quieres abrir hoy.</h2>
+      </div>
+
+      <div class="books-grid" id="booksGrid"></div>
+    </section>
+
+    <section class="closing">
+      <div>
+        <p class="eyebrow">Lectura privada, compra simple</p>
+        <h2>Te regalamos un capítulo completo. El precio promocional termina en <span class="countdown" data-countdown>10:00</span>.</h2>
+      </div>
+      <figure class="yape-card">
+        <img src="img/yape.jpeg" alt="Pago por Yape">
+        <figcaption>Paga por Yape y confirma tu compra por WhatsApp.</figcaption>
+      </figure>
+      <a class="primary-link" href="#libros">Ver colección</a>
+    </section>
+  </main>
+
+  <div class="modal" id="previewModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-panel">
+      <button class="modal-close" type="button" aria-label="Cerrar" data-close>&times;</button>
+      <p class="eyebrow" id="modalKicker">Capítulo completo de regalo</p>
+      <h2 id="modalTitle"></h2>
+      <p id="modalIntro"></p>
+      <div class="preview-box">
+        <h3 id="chapterTitle"></h3>
+        <div id="chapterText" class="chapter-text"></div>
+      </div>
+      <div class="modal-offer">
+        <div>
+          <span>Precio regular</span>
+          <strong>S/ 100</strong>
+        </div>
+        <div>
+          <span>Promo termina en</span>
+          <strong class="countdown" data-countdown>10:00</strong>
+        </div>
+        <div>
+          <span>Precio promo</span>
+          <strong>S/ 50</strong>
+        </div>
+      </div>
+      <figure class="modal-yape">
+        <img src="img/yape.jpeg" alt="Pago por Yape">
+        <figcaption>Compra por WhatsApp y envía tu comprobante de Yape.</figcaption>
+      </figure>
+      <a class="whatsapp-btn" id="modalBuy" target="_blank" rel="noopener">Comprar libro completo</a>
+    </article>
+  </div>
+
+  <script src="chapters.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
