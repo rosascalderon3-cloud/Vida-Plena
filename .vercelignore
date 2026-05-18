@@ -1,0 +1,6 @@
+*.pdf
+*.docx
+node_modules/
+.env
+browser-profiles/
+logs/
